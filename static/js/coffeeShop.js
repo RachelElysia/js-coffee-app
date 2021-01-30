@@ -42,5 +42,9 @@ const setProgressAndStatus = (progressVal, statusMsg) => {
 // const button = document.querySelector('.add-to-order');
 // button.addEventListener('click', addItemToCart);
 
+$('.add-to-order').on('click', () => {
+  addItemToCart('Coffee');
+  incrementCartTotal(1.5);
+});
 
 
